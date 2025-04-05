@@ -8,6 +8,7 @@ public class AeroplaneApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AeroplaneApplication.class, args);
+		System.out.println("rokac");
 	}
 
 }
