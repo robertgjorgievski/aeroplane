@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Success user change details page</title>
+</head>
+<body>
+
+<h1>User details were changed!</h1>
+<p th:text="'Name: ' + ${user.name}">Name: name</p>
+<p th:text="'Email: ' + ${user.email}">Email: email</p>
+<p th:text="'Age: ' + ${user.age}">Age: age</p>
+<p th:text="'The user flightId is: ' + ${flightId}">flightId: none</p>
+
+</body>
+</html>
