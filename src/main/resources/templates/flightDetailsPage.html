@@ -5,6 +5,7 @@
 </head>
 <body>
         <h1>User details page</h1>
+        <p th:text="'Id: ' + ${user.id}">Name: name</p>
         <p th:text="'Name: ' + ${user.name}">Name: name</p>
         <p th:text="'Email: ' + ${user.email}">Email: email</p>
         <p th:text="'Age: ' + ${user.age}">Age: age</p>
@@ -17,6 +18,9 @@
         <h1>Change User details</h1>
 
         <form th:action="@{/flights}" th:object="${user}" method="post">
+            <label>Id:</label>
+            <input type="text" th:field="*{id}" /><br/><br/>
+
             <label>Name:</label>
             <input type="text" th:field="*{name}" /><br/><br/>
 
